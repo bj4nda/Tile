@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import React from 'react'
+import AboutMe from './component/about-me'
+import {aboutMe} from "../data/page-data"
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const page = () => {
   return (
-    <main className={styles.main}>
-      <h1>hello world</h1>
-    </main>
+    <div>
+      <AboutMe data={aboutMe}/>
+    </div>
   )
 }
+
+export default page

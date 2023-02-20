@@ -1,4 +1,51 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  h1 {
+    @apply text-yellow text-4xl sm:text-6xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-lg
+  }
+  h4{
+    @apply text-base
+  }
+  p {
+    @apply text-base
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  html{
+    @apply font-serif;
+  }
+
+
+}
+
+.icons-contactme {
+  @apply text-2xl m-2;
+}
+
+
+section{
+  @apply mb-10;
+}
+
+main h2{
+  @apply uppercase text-black;
+}
+
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -105,3 +152,4 @@ a {
     color-scheme: dark;
   }
 }
+ */
